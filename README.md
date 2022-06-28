@@ -19,14 +19,23 @@ flowchart TD
 ```
 
 ## 使用
-克隆本项目到Hexo博客根目录：
+
+
+### Step1.克隆本项目到Hexo博客根目录：
 ```
-cd $Your_Hexo_Directory
-git clone git@github.com:k3nryu/joplin2hexo.git
+git submodule add git@github.com:k3nryu/joplin2hexo.git
 ```
-执行下面命令：
+### Step2.执行下面命令：
 ```
 joplin2hexo/main.sh
 ```
+
+输入你想要放入Hexo博客的Joplin笔记的ID。
 > 第一次使用的时候会让你输入你的Joplin位置。以及各种信息。并生成profile文件。
 > 或者你可以直接编辑profile文件。
+
+## 更新
+```
+cd $Your_Hexo_Directory
+git pull --recurse-submodules
+```
