@@ -1,7 +1,7 @@
 # Joplin2Hexo
 
 ## 说明
-通过Joplin API或者SSH(SCP)获取笔记。转换为hexo格式。
+本脚本采用BASH编写，支持Linux，macOS，Windows（WSL）。通过Joplin API或者可选SSH(SCP)获取笔记以及其附件（包括图片），并转换为hexo格式。实现一行命令将Joplin笔记生成Hexo博客。
 
 # Flowchart
 ```mermaid
@@ -21,11 +21,12 @@ flowchart TD
 ## 使用
 克隆本项目到Hexo博客根目录：
 ```
-git clone https://github.com/
+cd $Your_Hexo_Directory
+git clone git@github.com:k3nryu/joplin2hexo.git
 ```
 执行下面命令：
 ```
 joplin2hexo/main.sh
 ```
-
-[https://kenryu.cc](https://kenryu.cc)
+> 第一次使用的时候会让你输入你的Joplin位置。以及各种信息。并生成profile文件。
+> 或者你可以直接编辑profile文件。
