@@ -39,11 +39,11 @@ function ReadConfig {
 		echo joplin_rsc_dir=$joplin_rsc_dir
 		echo ---
 	else
-		echo -e "User profile[$1] not found.\nPlease enter your Joplin server location(remote|local):"
 		echo '#!bin/bash' >> $1
+		echo hexo_dir=$hexo_dir >> $1
+		echo -e "User profile[$1] not found.\nPlease enter your Joplin server location(remote|local):"
 	        read joplin_srv_location
 	        echo joplin_srv_location=$joplin_srv_location
-		echo hexo_dir=$hexo_dir >> $1
 		if [[ $joplin_srv_location == "remote" ]];then
 	        	echo -e "Please enter your Joplin server user name:"
 	        	read joplin_srv_user
@@ -51,12 +51,6 @@ function ReadConfig {
 	        	echo -e "Please enter your Joplin server IP:"
 	        	read joplin_srv_ip
 			echo joplin_srv_ip=$joplin_srv_ip >> $1
-			echo -e "Please enter your Joplin server port(Defalt:41184):"
-			read joplin_srv_port
-			echo joplin_srv_port=$joplin_srv_port >> $1
-	        	echo -e "Please enter your Joplin server token:"
-	        	read joplin_srv_token
-			echo joplin_srv_token=$joplin_srv_token >> $1
 	        	echo -e "Please enter your Joplin server OS(mac or win):"
 	        	read joplin_os
 	        	if [[ $joplin_os == win ]];then
@@ -69,6 +63,12 @@ function ReadConfig {
 	        	        echo - "Input error!"
 	        	fi
 		fi
+		echo -e "Please enter your Joplin server port(Default:41184):"
+		read joplin_srv_port
+		echo joplin_srv_port=$joplin_srv_port >> $1
+	        echo -e "Please enter your Joplin server token:"
+	        read joplin_srv_token
+		echo joplin_srv_token=$joplin_srv_token >> $1
 	fi
 }
 
