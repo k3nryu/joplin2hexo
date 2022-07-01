@@ -1,7 +1,27 @@
 # Joplin2Hexo
 
-## 说明
-本脚本采用BASH编写，支持Linux，macOS，Windows（WSL）。通过Joplin API或者可选SSH(SCP)获取笔记以及其附件（包括图片），并转换为hexo格式。实现一行命令将Joplin笔记生成Hexo博客。
+## Description
+Get the notes and their attachments (including images) via the Joplin API or optionally SSH (SCP) and add the front-matter in hexo format. this script is written in BASH and supports Linux, macOS, Windows (WSL). Implements a one-line command to generate Joplin notes into a Hexo blog.
+
+## Features
+- Multi-platform: supports Linux, macOS, Windows (WSL).
+- Distributed design: supports Hexo and Joplin not on the same computer.
+- Simple & efficient: only 'note id' need to be entered.
+- Secure: uses SSH reverse proxy.
+- Easy to maintain: uses BASH and Joplin official API.
+
+## Quick Start
+### (When you first use) Step1. Clone or download this script to your Hexo root directory.
+```
+cd $Your_Hexo_Directory
+git clone https://github.com/k3nryu/joplin2hexo.git
+```
+### Step2. Excute following command.
+```
+joplin2hexo/main.sh
+```
+Then enter the noteid that you want to upload to Hexo.
+> The first time you use it you will be asked to enter your Joplin location. And various information. And generate a profile file. Or you can edit the profile file directly.
 
 # Flowchart
 ```mermaid
@@ -17,25 +37,14 @@ flowchart TD
 	proc3[Modify]
 	
 ```
-
-## 使用
-
-
-### Step1.克隆本项目到Hexo博客根目录：
-```
-git submodule add git@github.com:k3nryu/joplin2hexo.git
-```
-### Step2.执行下面命令：
-```
-joplin2hexo/main.sh
-```
-
-输入你想要放入Hexo博客的Joplin笔记的ID。
-> 第一次使用的时候会让你输入你的Joplin位置。以及各种信息。并生成profile文件。
-> 或者你可以直接编辑profile文件。
-
-## 更新
+## Update
 ```
 cd $Your_Hexo_Directory
-git pull --recurse-submodules
+git pull
+```
+
+## Uninstall
+```
+cd $Your_Hexo_Directory
+rm -rf joplin2hexo
 ```
