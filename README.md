@@ -24,6 +24,8 @@ Then enter the noteid that you want to upload to Hexo.
 > The first time you use it you will be asked to enter your Joplin location. And various information. And generate a profile file. Or you can edit the profile file directly.
 
 # Flowchart
+<details>
+<summary> Flowchat </summary>
 ```mermaid
 flowchart TD
 	start([start]) --> id1{The location of the JoplinClipperServer relative to this program.}
@@ -37,6 +39,8 @@ flowchart TD
 	proc3[Modify]
 	
 ```
+<details>
+
 ## Update
 ```
 cd $Your_Hexo_Directory

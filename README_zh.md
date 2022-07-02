@@ -24,6 +24,8 @@ joplin2hexo/main.sh
 > 或者你可以直接编辑profile文件。
 
 # Flowchart
+<details>
+<summary>流程图</summary>
 ```mermaid
 flowchart TD
 	start([start]) --> id1{The location of the JoplinClipperServer relative to this program.}
@@ -37,6 +39,7 @@ flowchart TD
 	proc3[Modify]
 	
 ```
+</details>
 
 ## 更新
 ```
