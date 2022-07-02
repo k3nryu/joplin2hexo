@@ -26,6 +26,7 @@ joplin2hexo/main.sh
 # Flowchart
 <details>
 <summary>流程图</summary>
+
 ```mermaid
 flowchart TD
 	start([start]) --> id1{The location of the JoplinClipperServer relative to this program.}
@@ -39,6 +40,7 @@ flowchart TD
 	proc3[Modify]
 	
 ```
+
 </details>
 
 ## 更新
