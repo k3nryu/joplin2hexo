@@ -1,4 +1,7 @@
 # Joplin2Hexo
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## 说明
 本脚本采用BASH编写，支持Linux，macOS，Windows（WSL）。通过Joplin API或者可选SSH(SCP)获取笔记以及其附件（包括图片），并转换为hexo格式。实现一行命令将Joplin笔记生成Hexo博客。
@@ -23,7 +26,7 @@ joplin2hexo/main.sh
 > 第一次使用的时候会让你输入你的Joplin位置。以及各种信息。并生成profile文件。
 > 或者你可以直接编辑profile文件。
 
-# Flowchart
+# 流程图
 <details>
 <summary>流程图</summary>
 
@@ -48,3 +51,6 @@ flowchart TD
 cd $Your_Hexo_Directory
 git pull --recurse-submodules
 ```
+
+## To-Do
+- [ ] 支持embed格式的资源
