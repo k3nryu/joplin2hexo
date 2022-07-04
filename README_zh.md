@@ -4,7 +4,7 @@
 [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## 说明
-本脚本采用BASH编写，支持Linux，macOS，Windows（WSL）。通过Joplin API或者可选SSH(SCP)获取笔记以及其附件（包括图片），并转换为hexo格式。实现一行命令将Joplin笔记生成Hexo博客。
+本脚本采用BASH编写，支持Linux，macOS，Windows（WSL）。通过Joplin API或者可选SSH(SCP)获取笔记以及其附件（包括图片），保存在hexo的"source/_post"目录中。实现一行命令将Joplin笔记生成Hexo博客。
 
 ## 特色
 - 多平台：支持Linux，macOS，Windows（WSL）
@@ -54,3 +54,7 @@ git pull --recurse-submodules
 
 ## To-Do
 - [ ] 支持embed格式的资源
+	例如：<embed src="abc.pdf" width="100%" height="1000" type="application/pdf">
+- [ ] 支持识别tag自动上传
+	例如：在joplin笔记上贴上一个hexo或者blog等的tag，然后程序自动筛选出这部分的笔记然后复制到hexo的post目录。
+
