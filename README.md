@@ -61,3 +61,4 @@ rm -rf joplin2hexo
         For example: <embed src="abc.pdf" width="100%" height="1000" type="application/pdf">
 - [ ] Support recognizing tag to upload automatically
         For example, if you put a tag like "hexo" or "blog" on a joplin note, the program will automatically filter the notes and copy them to the hexo post directory.
+- [ ] Fix can't not convert when special symbols including Note Titel like '/'
